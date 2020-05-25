@@ -3,7 +3,7 @@
 (defn squear 
   "Returns the squear of a given number"
   [x]
-  (throw (Exception. "Not implemented."))
+  (* x x)
 )
 
 (defn fderive

@@ -2,10 +2,7 @@
 
 (defn only-greater-than-five
   "Filters the input list returning only the elements greater than 5."
-  [x]
-  (throw (Exception. "Not implemented."))
-)
-
+  [x] (filter #(> % 5) x))
 
 
 

@@ -2,18 +2,26 @@
   (:require [clojure.test :refer :all]
             [exercise8 :refer :all]))
 
-; (deftest fderive-sin-zero
-;   (testing "Does approximate the derive of sin."
-;   (is (= ((fderive #(Math/sin %) 0.001) 0) 0.9999998333333416))))
+ (deftest fderive-sin-zero
+   (testing "Does approximate the derive of sin."
+   (is (= ((fderive #(Math/sin %) 0.001) 0) 0.9999998333333416))))
 			    
-; (deftest fderive-sin-five
-;   (testing "Does approximate the derive of sin."
-;   (is (= ((fderive #(Math/sin %) 0.001) 5) 0.2836621381863136))))
+ (deftest fderive-sin-five
+   (testing "Does approximate the derive of sin."
+   (is (= ((fderive #(Math/sin %) 0.001) 5) 0.2836621381863136))))
 			    
-; (deftest fderive-squear-two
-;   (testing "Does approximate the derive of sin."
-;   (is (= ((fderive squear 0.001) 2) 3.9999999999995595))))
+ (deftest fderive-squear-two
+   (testing "Does approximate the derive of sin."
+   (is (= ((fderive squear 0.001) 2) 3.9999999999995595))))
 						    
-; (deftest fderive-squear-6
-;   (testing "Does approximate the derive of sin."
-;   (is (= ((fderive squear 0.001) 6) 12.000000000004007))))
+ (deftest fderive-squear-6
+   (testing "Does approximate the derive of sin."
+   (is (= ((fderive squear 0.001) 6) 12.000000000004007))))
+
+
+(deftest fderive-squear-0
+(testing "Does squeaar of zero."
+  (is (= (squear 0) 0))))
+(deftest fderive-squear-3
+(testing "Does squear of 3 ."
+  (is (= (squear 3) 9))))
