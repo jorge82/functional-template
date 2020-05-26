@@ -9,8 +9,11 @@
 (defn fderive
   "Returns a function that approximates the derive of f with error h in the value given to the returned function."
   [f h]
-  (throw (Exception. "Not implemented."))
-)
+  
+  ( fn [value] ( / (- (f   (+ value h)) (f    (- value h) )) (* h 2 ) ))
+
+
+  )
 
 
 
